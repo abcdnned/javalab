@@ -19,7 +19,7 @@ public class GetAllInterfacesChild implements ISomeInterface{
 		final Set<Class<? extends ParentClass>> childs = reflections.getSubTypesOf(ParentClass.class);
 		childs.forEach(clazz->System.out.println(clazz.getName()));
 
-		Tlog.printSection("serializable");
+		Tlog.printSection("getserializablechild");
 		final Set<Class<? extends Serializable>> c = reflections.getSubTypesOf(Serializable.class);
 		c.forEach(clazz->System.out.println(clazz.getName()));
 
